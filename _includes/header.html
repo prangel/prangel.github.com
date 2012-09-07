@@ -1,0 +1,21 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Organization" lang="en">
+		<meta charset="utf-8"/>
+
+{% case page.layout %}
+{% when 'default' %}
+		<title>Paul Rangel . Rangelworks</title>
+{% else %}
+		<title>{{ site.tagline }} - {{ page.title }} - Rangelworks</title>
+{% endcase %}
+
+		<link rel="stylesheet" media="all" href="/static/css/style.css"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<link href="http://feeds.feedburner.com/magpielab" rel="alternate" title="{{ site.sitename }} | {{ site.tagline }}" type="application/atom+xml" />
+		<link rel="search" type="application/opensearchdescription+xml" title="Website" href="opensearch.xml" />
+
+	</head>
+
+	<body class="body">
